@@ -18,11 +18,9 @@ var TS_FILES = [BASE_PATH + '**/*.ts'];
 var JS_FILES = [BASE_PATH + '**/*.js'];
 var CSS_FILES = [BASE_PATH + '**/*.css'];
 var SASS_FILES = [BASE_PATH + '**/*.scss'];
-var HTML_FILES = [BASE_PATH + '**/*.html'];
+var HTML_FILES = ['index.html', BASE_PATH + '**/*.html'];
 
 var isProduction = process.env.PROJECT_STAGE === 'production';
-
-
 
 function joinArrays() {
 	var current;	

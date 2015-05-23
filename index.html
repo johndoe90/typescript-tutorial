@@ -2,19 +2,16 @@
 
 <html>
 	<head>
-		<!--<script src="node_modules/angular/angular.js"></script>
-		<script src="node_modules/requirejs/require.js" data-main="scripts/test"></script>-->
-
 			<!-- inject:css -->
 			<link rel="stylesheet" href="/app/test.css">
 			<!-- endinject -->
+
+			<script src="node_modules/requirejs/require.js" data-main="app/main"></script>
 	</head>
 
-	<!--<body ng-app="tutorial">
-		THIS IS IT
-	</body>-->
-
-	<body>
+	<body ng-controller="testController as testController">
 		IT WORKS
+
+		<input type="button" ng-click="testController.sayHello()" value="Click Me2" />
 	</body>
 </html>
