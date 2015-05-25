@@ -82,19 +82,8 @@ gulp.task('test', function() {
 	return gulp
 		.src('')
 		.pipe(shell([
-			'karma start'
+			'./node_modules/karma/bin/karma start'
 		]));
-	//return gulp
-	//	.src([
-	//		'test-main.js',
-	//		'app/**/*.js',
-	//		'!app/main.js'
-	//	])
-	//	.pipe(karma({
-	//		action: 'watch',
-	//		//files: SPEC_FILES,
-	//		configFile: 'karma.conf.js'
-	//	}));
 });
 
 gulp.task('ts', function() {
