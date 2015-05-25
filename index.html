@@ -3,15 +3,17 @@
 <html>
 	<head>
 			<!-- inject:css -->
-			<link rel="stylesheet" href="/app/test.css">
+			<link rel="stylesheet" href="/app/assets/css/styles.css">
 			<!-- endinject -->
 
 			<script src="node_modules/requirejs/require.js" data-main="app/main"></script>
 	</head>
 
-	<body ng-controller="testController as testController">
-		IT WORKS
+	<body>
+		<!-- IT WORKS
 
-		<input type="button" ng-click="testController.sayHello()" value="Click Me2" />
+		<input type="button" ng-click="testController.sayHello()" value="Click Me2" /> -->
+
+		<div ui-view></div>
 	</body>
 </html>

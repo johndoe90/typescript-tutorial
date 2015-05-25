@@ -1,12 +1,16 @@
-/// <reference path="_reference.ts" />
+/// <reference path="references.ts" />
+
+'use strict';
 
 import angular = require('angular');
+import {stateOneModule} from 'states/stateOne/stateOneModule';
+import {greeterModule} from 'components/greeter/greeterModule';
 
-import {TestController} from './testController';
+function configuration(): void {
+	console.log('APP MODULE CONFIGURATION');
+}
 
-angular
-	.module('typescript', [])
-	.controller('testController', TestController)
-	.config(function() {
-		console.log('CONFIGURATION');
-	});
+export var appModule = angular
+	.module('typescript', ['ui.router', greeterModule.name, stateOneModule.name])
+	//.controller('testController', TestController)
+	.config(configuration);
